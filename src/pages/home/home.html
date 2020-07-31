@@ -1,0 +1,40 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="header-home">
+     <ion-col text-center>
+        <img class="logo" src="assets/imgs/Logo_Acams.png">
+        <p>Empowering professionals across 175 countries</p>
+       
+     </ion-col> 
+    </ion-row>  
+
+    <ion-row>
+     <ion-col>
+      <div class="container-card-background">
+        <ion-card (click)="chooseIndividual()">
+          <img src="assets/imgs/for-ind@2x.png">
+          <div class="card-title-home">For Individuals</div>
+        </ion-card>
+      </div>
+     </ion-col> 
+
+     <ion-col>
+      <div class="container-card-background">
+        <ion-card (click)="chooseEnterprise()">
+          <img src="assets/imgs/for-org@2x.png">
+          <div class="card-title-home">For Organization</div>
+        </ion-card>
+      </div>
+     </ion-col> 
+    </ion-row>
+  </ion-grid>
+</ion-content>

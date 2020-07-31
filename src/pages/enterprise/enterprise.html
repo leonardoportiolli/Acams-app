@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>For Organization</ion-title>
+
+    <ion-buttons end>
+      <button ion-button productCatalogRedirect>
+        <ion-icon name="apps"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row class="header-enterprise">
+     <ion-col text-center>
+      <img src="assets/imgs/buttons/Logo-intern.png" alt="">
+
+      <p>Protect your institution from money laundering threats while<br>
+        meeting mandated AML Training requirements</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row >
+
+      <ion-col col-md-4 *ngFor="let item of items | slice: 0:1">
+        <div class="container-card-background">
+          <ion-card (click)="itemTapped($event, item)">
+            <img src="{{item.image}}">
+            <div class="card-title">{{item.title}}</div>
+          </ion-card>
+        </div>
+      </ion-col>
+
+      <ion-col col-md-8>
+        <ion-row>
+
+         <ion-col col-md-6 *ngFor="let item of items | slice: 1:5">
+          <div class="container-card-background">
+            <ion-card (click)="itemTapped($event, item)">
+              <img src="{{item.image}}">
+              <div class="card-title">{{item.title}}</div>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

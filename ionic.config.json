@@ -1,0 +1,7 @@
+{
+  "name": "acams",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

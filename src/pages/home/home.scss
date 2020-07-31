@@ -1,0 +1,40 @@
+page-home {
+
+}
+
+
+/*.card-ios{
+    border-radius: 2px;
+    box-shadow: 0px 5px 10px 0 gray
+    !important;
+}*/
+.header-home{
+    background-image: url(../assets/imgs/Banner-home.png);
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    height: 368.53px;
+    width: 100%;
+}
+
+.logo{
+    margin-top: 130px;
+}
+
+.header-home p{
+    font-family: lato-regular;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 0.39px;
+}
+
+
+.card-title-home {
+    position: absolute;
+    top: 40%;
+    font-size: 2.0em;
+    width: 100%;
+    color: #fff;
+    font-family: pt-serif-regular;
+    font-size: 50px !important;
+    text-align: center;
+  }

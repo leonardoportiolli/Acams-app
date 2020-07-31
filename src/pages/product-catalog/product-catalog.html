@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Product Catalog</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row class="header-enterprise">
+     <ion-col text-center>
+        <img src="assets/imgs/buttons/Logo-intern.png" alt="">
+
+        <p>Become part of the largest international UML and financial crime prevention community.</p>
+     </ion-col>
+    </ion-row>
+
+    <ion-row >
+     <ion-col col-md-4 *ngFor="let item of items">
+      <div class="container-card-background">
+        <ion-card (click)="itemTapped($event, item)">
+          <img src="{{item.image}}">
+          <div class="card-title">{{item.title}}</div>
+        </ion-card>
+      </div>
+     </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
